@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   final message = 'サンプル・メッセージ。';
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return new MaterialApp(
       title: 'Flutter Demo',
       home: new MyHomePage(
