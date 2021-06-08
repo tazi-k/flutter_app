@@ -7,21 +7,22 @@ class MyApp extends StatelessWidget {
   final message = 'サンプル・メッセージ。';
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'Flutter Demo',
       home: new MyHomePage(
-        title: this.title, message: this.message
-        ),
+        title:this.title, 
+        message:this.message
+      ),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  final String title;
-  final String message;
+  final String title = 'test';
+  final String message = 'test';
 
-  MyHomePage({this.title, this.message}) : super();
+  MyHomePage({this.title, this.message}): super();
 
   @override
   _MyHomePageState createState() => new _MyHomePageState();
@@ -29,15 +30,15 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
-  Widget build(BuildContext context){
-    return Scaffold{
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Text(
         widget.message,
-        style: TextStyle(fontSize:32.0),
+        style: TextStyle(fontSize: 32.0),
       ),
-    };
+    );
   }
 }
