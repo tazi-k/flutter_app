@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  final String title = 'test';
-  final String message = 'test';
+  final String title;
+  final String message;
 
-  MyHomePage({this.title, this.message}): super();
+  MyHomePage({required this.title, required this.message}): super();
 
   @override
   _MyHomePageState createState() => new _MyHomePageState();
