@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/nextPage.dart';
 
 void main() => runApp(new MyApp());
 
@@ -33,28 +34,25 @@ class _MyHomePageState extends State<MyHomePage> {
     _message = 'Hello!';
   }
 
-  void _setMessage() {
-    setState(() {
-      _message = 'タップしました！';
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Text(
-        _message,
-        style: TextStyle(fontSize: 32.0),
-      ),
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: _setMessage,
-        tooltip: 'set message.',
-        child: Icon(Icons.star),
-      )
-    );
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: Text(
+          _message,
+          style: TextStyle(fontSize: 32.0),
+        ),
+        floatingActionButton: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NextPage(),
+                ));
+          },
+          child: Text("テスト"),
+        ));
   }
 }
