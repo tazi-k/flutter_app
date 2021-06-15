@@ -1,3 +1,5 @@
 # flutter_app
 
-A new Flutter project.
+Flutterの機能を学習しながら実装。
+機能を少しずつ追加して広げていく。
+最終着地点は未定。
