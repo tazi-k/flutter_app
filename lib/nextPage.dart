@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/thirdPage.dart';
 
 class NextPage extends StatelessWidget {
   @override
@@ -9,6 +10,16 @@ class NextPage extends StatelessWidget {
       ),
       body: Center(
         child: Image.asset('images/PSYCHO-PASS.jpeg'),
+      ),
+      floatingActionButton: ElevatedButton(
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ThirdPage(),
+              ));
+        },
+        child: Text("計算して欲しい！"),
       ),
     );
   }

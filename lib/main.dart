@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/nextPage.dart';
 
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -50,9 +51,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => NextPage(),
-                ));
+                )
+              );
           },
-          child: Text("テスト"),
-        ));
+          child: Text("画像を見たい！"),
+        )
+      );
   }
 }
