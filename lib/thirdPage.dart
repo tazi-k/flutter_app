@@ -5,7 +5,7 @@ class ThirdPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("計算してやるよ！"),
+        title: Text('計算機'),
       ),
       body: Row(
         children: [
