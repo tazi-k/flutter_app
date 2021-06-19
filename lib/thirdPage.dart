@@ -7,8 +7,25 @@ class ThirdPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("計算してやるよ！"),
       ),
-      body: Center(
-        child: TextField(),
+      body: Row(
+        children: [
+          Spacer(),
+          Expanded(
+            child: TextField(
+            ),
+          ),
+          Spacer(),
+          Expanded(
+            child: TextField(
+              ),
+          ),
+          Spacer(),
+          Expanded(
+            child: TextField(
+            ),
+          ),
+          Spacer(),
+        ],
       ),
     );
   }
